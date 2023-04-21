@@ -11,7 +11,6 @@ import java.io.Serializable;
 /**
  * 秒杀订单表
  *
- * @author LiChao
  * @since 2022-03-03
  */
 @TableName("t_seckill_order")
@@ -20,20 +19,28 @@ public class TSeckillOrder implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
-    /** 秒杀订单ID **/
+    /**
+     * 秒杀订单ID
+     **/
     @ApiModelProperty("秒杀订单ID")
-      @TableId(value = "id", type = IdType.AUTO)
+    @TableId(value = "id", type = IdType.AUTO)
     private Long id;
 
-    /** 用户ID **/
+    /**
+     * 用户ID
+     **/
     @ApiModelProperty("用户ID")
     private Long userId;
 
-    /** 订单ID **/
+    /**
+     * 订单ID
+     **/
     @ApiModelProperty("订单ID")
     private Long orderId;
 
-    /** 商品ID **/
+    /**
+     * 商品ID
+     **/
     @ApiModelProperty("商品ID")
     private Long goodsId;
 
@@ -73,10 +80,10 @@ public class TSeckillOrder implements Serializable {
     @Override
     public String toString() {
         return "TSeckillOrder{" +
-        "id=" + id +
-        ", userId=" + userId +
-        ", orderId=" + orderId +
-        ", goodsId=" + goodsId +
-        "}";
+                "id=" + id +
+                ", userId=" + userId +
+                ", orderId=" + orderId +
+                ", goodsId=" + goodsId +
+                "}";
     }
 }

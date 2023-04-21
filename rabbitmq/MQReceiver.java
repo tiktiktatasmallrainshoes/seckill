@@ -22,7 +22,6 @@ import org.springframework.stereotype.Service;
 /**
  * 消息消费者
  *
- * @author: LC
  * @date 2022/3/7 7:44 下午
  * @ClassName: MQReceiver
  */
@@ -43,7 +42,6 @@ public class MQReceiver {
      *
      * @param
      * @return void
-     * @author LiChao
      * @operation add
      * @date 6:48 下午 2022/3/8
      **/

@@ -3,7 +3,6 @@ package com.example.seckilldemo.vo;
 /**
  * 公共返回对象
  *
- * @author: LC
  * @date 2022/3/2 1:50 下午
  * @ClassName: RespBean
  */
@@ -35,7 +34,7 @@ public class RespBean {
         this.object = object;
     }
 
-    public RespBean(){
+    public RespBean() {
 
     }
 

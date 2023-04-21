@@ -42,7 +42,6 @@ import java.util.concurrent.TimeUnit;
 /**
  * 秒杀
  *
- * @author: LC
  * @date 2022/3/4 11:34 上午
  * @ClassName: SeKillController
  */
@@ -96,7 +95,6 @@ public class SeKillController implements InitializingBean {
      * @param goodsId
      * @param captcha
      * @return com.example.seckilldemo.vo.RespBean
-     * @author LiChao
      * @operation add
      * @date 4:04 下午 2022/3/9
      **/
@@ -137,7 +135,6 @@ public class SeKillController implements InitializingBean {
      * @param tUser
      * @param goodsId
      * @return orderId 成功 ；-1 秒杀失败 ；0 排队中
-     * @author LiChao
      * @operation add
      * @date 7:04 下午 2022/3/8
      **/
@@ -158,7 +155,6 @@ public class SeKillController implements InitializingBean {
      * @param user
      * @param goodsId
      * @return java.lang.String
-     * @author LC
      * @operation add
      * @date 11:36 上午 2022/3/4
      **/
@@ -233,7 +229,6 @@ public class SeKillController implements InitializingBean {
      * @param user
      * @param goodsId
      * @return java.lang.String
-     * @author LC
      * @operation add
      * @date 11:36 上午 2022/3/4
      **/
@@ -263,7 +258,6 @@ public class SeKillController implements InitializingBean {
      *
      * @param
      * @return void
-     * @author LiChao
      * @operation add
      * @date 6:29 下午 2022/3/8
      **/

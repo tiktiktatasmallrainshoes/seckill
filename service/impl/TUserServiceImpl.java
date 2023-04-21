@@ -27,7 +27,6 @@ import javax.servlet.http.HttpServletResponse;
  * 用户表 服务实现类
  * </p>
  *
- * @author LiChao
  * @since 2022-03-02
  */
 @Service

@@ -13,7 +13,6 @@ import java.time.LocalDateTime;
 /**
  * 秒杀商品表
  *
- * @author LiChao
  * @since 2022-03-03
  */
 @TableName("t_seckill_goods")
@@ -22,28 +21,40 @@ public class TSeckillGoods implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
-    /** 秒杀商品ID **/
+    /**
+     * 秒杀商品ID
+     **/
     @ApiModelProperty("秒杀商品ID")
-      @TableId(value = "id", type = IdType.AUTO)
+    @TableId(value = "id", type = IdType.AUTO)
     private Long id;
 
-    /** 商品ID **/
+    /**
+     * 商品ID
+     **/
     @ApiModelProperty("商品ID")
     private Long goodsId;
 
-    /** 秒杀家 **/
+    /**
+     * 秒杀家
+     **/
     @ApiModelProperty("秒杀家")
     private BigDecimal seckillPrice;
 
-    /** 库存数量 **/
+    /**
+     * 库存数量
+     **/
     @ApiModelProperty("库存数量")
     private Integer stockCount;
 
-    /** 秒杀开始时间 **/
+    /**
+     * 秒杀开始时间
+     **/
     @ApiModelProperty("秒杀开始时间")
     private LocalDateTime startDate;
 
-    /** 秒杀结束时间 **/
+    /**
+     * 秒杀结束时间
+     **/
     @ApiModelProperty("秒杀结束时间")
     private LocalDateTime endDate;
 
@@ -99,12 +110,12 @@ public class TSeckillGoods implements Serializable {
     @Override
     public String toString() {
         return "TSeckillGoods{" +
-        "id=" + id +
-        ", goodsId=" + goodsId +
-        ", seckillPrice=" + seckillPrice +
-        ", stockCount=" + stockCount +
-        ", startDate=" + startDate +
-        ", endDate=" + endDate +
-        "}";
+                "id=" + id +
+                ", goodsId=" + goodsId +
+                ", seckillPrice=" + seckillPrice +
+                ", stockCount=" + stockCount +
+                ", startDate=" + startDate +
+                ", endDate=" + endDate +
+                "}";
     }
 }

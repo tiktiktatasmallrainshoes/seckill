@@ -19,7 +19,6 @@ import javax.servlet.http.HttpServletResponse;
 import javax.validation.Valid;
 
 /**
- * @author: LC
  * @date 2022/3/2 10:11 上午
  * @ClassName: LoginController
  */
@@ -40,7 +39,6 @@ public class LoginController {
      *
      * @param
      * @return java.lang.String
-     * @author LC
      * @operation add
      * @date 10:13 上午 2022/3/2
      **/

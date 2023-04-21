@@ -6,7 +6,6 @@ import org.springframework.stereotype.Component;
 /**
  * MD5工具类
  *
- * @author: LC
  * @date 2022/3/1 4:45 下午
  * @ClassName: MD5Util
  */
@@ -24,7 +23,6 @@ public class MD5Util {
      *
      * @param inputPass
      * @return java.lang.String
-     * @author LC
      * @operation add
      * @date 4:49 下午 2022/3/1
      **/
@@ -35,12 +33,12 @@ public class MD5Util {
 
     /**
      * 第二次加密
-     * @author LC
-     * @operation add
-     * @date 4:52 下午 2022/3/1
+     *
      * @param formPass
      * @param salt
      * @return java.lang.String
+     * @operation add
+     * @date 4:52 下午 2022/3/1
      **/
     public static String formPassToDBPass(String formPass, String salt) {
         String str = "" + salt.charAt(0) + salt.charAt(2) + formPass + salt.charAt(5) + salt.charAt(4);
@@ -52,9 +50,10 @@ public class MD5Util {
         String dbPass = formPassToDBPass(fromPass, salt);
         return dbPass;
     }
+
     public static void main(String[] args) {
         System.out.println(inputPassToFromPass("123456"));//d3b1294a61a07da9b49b6e22b2cd7f9
-        System.out.println(formPassToDBPass("123456","1a2b3c4d"));
+        System.out.println(formPassToDBPass("123456", "1a2b3c4d"));
         System.out.println(inputPassToDBPass("123456", "1a2b3c4d"));
     }
 }

@@ -10,7 +10,6 @@ import org.apache.catalina.User;
 /**
  * 服务类
  *
- * @author LiChao
  * @since 2022-03-03
  */
 public interface ITOrderService extends IService<TOrder> {
@@ -21,7 +20,6 @@ public interface ITOrderService extends IService<TOrder> {
      * @param user    用户对象
      * @param goodsVo 商品对象
      * @return com.example.seckilldemo.entity.TOrder
-     * @author LC
      * @operation add
      * @date 1:44 下午 2022/3/4
      **/
@@ -32,7 +30,6 @@ public interface ITOrderService extends IService<TOrder> {
      *
      * @param orderId
      * @return com.example.seckilldemo.vo.OrderDeatilVo
-     * @author LC
      * @operation add
      * @date 10:21 下午 2022/3/6
      **/
@@ -44,7 +41,6 @@ public interface ITOrderService extends IService<TOrder> {
      * @param user
      * @param goodsId
      * @return java.lang.String
-     * @author LiChao
      * @operation add
      * @date 2:59 下午 2022/3/9
      **/
@@ -57,7 +53,6 @@ public interface ITOrderService extends IService<TOrder> {
      * @param goodsId
      * @param path
      * @return boolean
-     * @author LiChao
      * @operation add
      * @date 2:59 下午 2022/3/9
      **/
@@ -65,13 +60,13 @@ public interface ITOrderService extends IService<TOrder> {
 
     /**
      * 校验验证码
-     * @author LiChao
-     * @operation add
-     * @date 3:52 下午 2022/3/9
+     *
      * @param tuser
      * @param goodsId
      * @param captcha
      * @return boolean
+     * @operation add
+     * @date 3:52 下午 2022/3/9
      **/
     boolean checkCaptcha(TUser tuser, Long goodsId, String captcha);
 }
